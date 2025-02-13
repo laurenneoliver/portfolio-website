@@ -1,0 +1,44 @@
+/* Contactme.css */
+.form {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    padding-left: 20%;
+    padding-right: 20%;
+    color: #b58165;
+}
+input {
+    width: 100%;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+}
+:placeholder-shown{
+    color: gray;
+    padding: 5px;
+}
+label{
+    align-self: flex-start;
+    padding: 10px 0px 10px 0px; 
+    font-weight: bold; 
+    text-align: left; 
+}
+button{
+    background-color: #87a105;
+    padding: 10px 20px 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    border: #b58165;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: white;
+    color: #87a105;
+    border-color: #87a105;
+    border-style: solid;
+}

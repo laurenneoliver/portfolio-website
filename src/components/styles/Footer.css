@@ -1,0 +1,34 @@
+/* Footer.css */
+footer p {
+    overflow: hidden;
+    animation: left_to_right 3s ease;
+}
+
+.love {
+    color: red;
+}
+
+@keyframes left_to_right_contact {
+    from {
+        margin-left: -40%;
+    }
+    to {
+        margin-left: auto;
+    }
+}
+
+#contact-body {
+    padding: 20px;
+}
+
+#contact-h1 {
+    padding: 10px;
+    animation: left_to_right_contact 3s ease;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f3f1e8;
+}

@@ -1,0 +1,55 @@
+#skills-container {
+    display: flex; /* Aligns items horizontally */
+    flex-wrap: wrap; /* Allows items to wrap to the next row */
+    gap: 20px; /* Adds spacing between skills */
+    justify-content: center; /* Centers all items */
+    margin: 20px auto; /* Centers the container */
+    width: 90%; /* Optional: Set width relative to the screen */
+}
+
+.skills {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 120px; /* Fixed width for square layout */
+    height: 120px; /* Fixed height for square layout */
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #a07264;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.skills:hover {
+    transform: scale(1.05); /* Adds a hover effect */
+}
+
+.skills img {
+    width: 60px; /* Resizes images */
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skills-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#computer {
+    padding-right: 10px;
+    width: 40px; /* Adjust width */
+    height: auto;
+}
+
+h3 {
+    font-size: 24px;
+    color: rgb(175, 143, 100);
+    text-align: center;
+}
