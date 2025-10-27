@@ -10,6 +10,13 @@ const projects = [
       lang: ['HTML ', 'CSS ', 'JavaScript ', 'React ', 'Firebase'],
     },
     {
+      thumbnail: '/images/starwarsprofile-thumbnail.png',
+      title: 'starwarsprofile',
+      link: 'https://github.com/laurenneoliver/starwarsprofile',
+      desc: 'A website for searching for Star Wars characters or to take a fun quiz to determine which Star Wars character you are most like.',
+      lang: ['React ', 'Node.js ', 'Express.js'],
+    },
+    {
       thumbnail: '/images/colmaracademy-thumbnail.png',
       title: 'colmaracademy',
       link: 'https://laurenneoliver.github.io/Colmar-Academy-Website/',
@@ -56,7 +63,13 @@ function Portfolio() {
                                 <h3>{project.title}</h3>
                             </a>
                             <p>{project.desc}</p>
-                            <p>{project.lang}</p>
+                            <div className="languages">
+                              {project.lang.map((language, index) => (
+                                <span key={index} className="lang-tag">
+                                  {language}
+                                </span>
+                              ))}
+                            </div>
                         </div>
                     ))}
             </div>

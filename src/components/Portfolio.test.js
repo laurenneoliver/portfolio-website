@@ -6,3 +6,19 @@ test('renders portfolio header', () => {
     const header = screen.getByText(/Portfolio/i);
     expect(header).toBeInTheDocument();
 });
+
+test('renders project titles', () => {
+    render(<Portfolio />);
+
+    const title = [
+        'toolmate',
+        'colmaracademy',
+        'healthsnap',
+        'once upon a time',
+        'fitness app'
+      ];
+    
+    title.forEach(title => {
+        expect(screen.getByText(title)).toBeInTheDocument();
+    });
+});

@@ -7,7 +7,7 @@ function Header() {
   const isContactPage = location.pathname === '/contact';
     return (
       <header>
-        <nav>
+        <nav className="header-nav">
           <div className="logo-image">
             <Link to="/home" className="home">
               <img src="images/icon.png" alt="flower-logo" />
