@@ -1,18 +1,21 @@
-import React from 'react';
-import './styles/Banner.css';
+import React from "react";
+import "./styles/Banner.css";
 
 const Banner = () => {
   const bannerStyle = {
     backgroundImage: "url('/images/banner_background.png')",
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: '0%',
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "0%",
   };
 
   return (
     <div className="banner" style={bannerStyle}>
       <article>
-        <h1>Welcome to my website!</h1>
-        <p>Please take your time to explore and learn more about me both personally and professionally.</p>
+        <h1>Welcome to my corner of the web ✨</h1>
+        <p>
+          I’m Laurenne, a software engineering student who loves turning ideas
+          into interactive, user-friendly web experiences.
+        </p>
       </article>
       <div className="side-profile">
         {/* Profile Picture */}
